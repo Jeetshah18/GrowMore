@@ -181,10 +181,10 @@
   transition: all 0.4s ease;
 }
 .forms .form-content .button input:hover{
-  background: #5b13b9;
+  background: #8bc052;
 }
 .forms .form-content label{
-  color: #5b13b9;
+  color: #8bc052;
   cursor: pointer;
 }
 .forms .form-content label:hover{
