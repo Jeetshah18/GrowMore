@@ -38,6 +38,29 @@
 	<link rel="stylesheet" href="style.css">
 	<!-- responsive css -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<script>
+		window.watsonAssistantChatOptions = {
+			integrationID: "7cee22ef-ef06-4aab-9ca6-6202f2ab1d62", // The ID of this integration.
+			region: "eu-gb", // The region your integration is hosted in.
+			serviceInstanceID: "a872e461-2820-42ca-9ae9-904e227f7a30", // The ID of your service instance.
+			onLoad: function(instance) { 
+				instance.updateCSSVariables({
+        		'BASE-font-family': '"Roboto Slab", cursive,"Bellota", serif',
+       			'$active-primary': '#795548',
+        		'$focus': '#00FF99',
+        		'$hover-primary': '#795548',
+        		'$interactive-01': '#8bc052'
+      			});
+				instance.render(); }
+		  };
+		setTimeout(function(){
+		  const t=document.createElement('script');
+		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+		  document.head.appendChild(t);
+		});
+	  </script>
+
 </head>
 
 <body>
@@ -59,9 +82,9 @@
 	  				</div>
 	  				<div class="col-sm-3">
 						<div class="social-icons pull-right">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.facebook.com/growmoree101"><i class="fa fa-facebook"></i></a>
+							<a href="https://app.slack.com/client/T02VBAH9UQ7/D0305AECSES"><i class="fa fa-slack"></i></a>
+							<a href="https://www.instagram.com/growmoree101/"><i class="fa fa-instagram"></i></a>
 						</div>
 					</div>
 	  			</div>
@@ -81,6 +104,7 @@
 							<nav>
 								<ul>
 									<li><a href="index.html">Home</a></li>
+									<li><a href="crop-rec.html">Crop REC</a></li>
 									<li><a href="#">Insights</a>
 										<ul class="submenu">
 											<li><a href="about.html">About Us</a></li>
@@ -112,7 +136,6 @@
 						<h2>About Us</h2>
 						<ul class="site-breadcrumb text-black">
 							<li><a href="#">Home</a> <span>></span></li>
-							<li>Pages <span>></span></li>
 							<li>About</li>
 						</ul>
 					</div>
@@ -132,9 +155,11 @@
 				<div class="col-lg-6 col-sm-12">
 					<div class="about-text">
 						<h2>Our Story</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum.</p>
+						<p>We believe that growing a plant is a story and every Farmer has a story to tell. It becomes a fairytale if the 
+							harvest is good or else it quickly transforms into a nightmare if not proper decisions aren't made in 
+							timely manner. Hence we want to provide the farmers the tools and accessibility on how to take smart and 
+							well-informed decisions for their agricultural procedures at 1-Stop destination at GrowMore.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -149,7 +174,8 @@
 				<div class="col-lg-8 offset-lg-2">
 					<div class="section-title text-center">
 						<h2>Why Choose Us</h2>
-						<p>We are professtional gardener It is a long established fact that a reader <br/> will be distracted by the readable content of a page when looking at its layout.</p>
+						<p>We strive only for success and want to not only spread awareness but also help <br/> 
+							farmers to get well-educated and improve the conventional way of farming.</p>
 					</div>
 				</div>
 			</div>
@@ -157,22 +183,25 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="sin-service style-2">
 						<i class="ti-clipboard"></i>
-						<h3>License & Insurance</h3>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h3>Step:1</h3>
+						<p>Fill in the details of your environment like rainfall,temperature, etc.
+
+						</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="sin-service style-2">
 						<i class="ti-truck"></i>
-						<h3>License & Insurance</h3>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h3>Step:2</h3>
+						<p>Based on our exclusive ML model and optimized solution we provide you with the best 
+							result on which crops to grow.</p>
 					</div>
 				</div>
 				<div class="col-lg-4 d-lg-block col-md-6 d-md-none col-sm-12">
 					<div class="sin-service style-2">
 						<i class="ti-cup"></i>
-						<h3>License & Insurance</h3>
-						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<h3>Step:3</h3>
+						<p>Reap benefits by cultivating the same crop as our model recommeded.</p>
 					</div>
 				</div>
 			</div>
@@ -186,26 +215,26 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="single-counter">
-						<p class="count-number count1">90</p>
-						<h4>Projects Completed</h4>
+						<p class="count-number count1">3</p>
+						<h4>ML Algorithms</h4>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class="single-counter">
-						<p class="count-number count2">120</p>
-						<h4>Happy Clients</h4>
+						<p class="count-number count2">500</p>
+						<h4>Rows of Dataset</h4>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class="single-counter">
-						<p class="count-number count3">50</p>
-						<h4>Decoration Awards</h4>
+						<p class="count-number count3">3</p>
+						<h4>Present on more than 3 platforms</h4>
 					</div>
 				</div>
 				<div class="col-sm-3">
 					<div class="single-counter">
-						<p class="count-number count4">240</p>
-						<h4>Coffee Music</h4>
+						<p class="count-number count4">10,000</p>
+						<h4>Number of users we hope to help.</h4>
 					</div>
 				</div>
 			</div>
@@ -219,80 +248,46 @@
 			<div class="row">
 				<div class="col-sm-8 offset-sm-2">
 					<div class="section-title text-center">
-						<h2>Our Gardener</h2>
+						<h2>Our Team</h2>
 					</div>
 				</div>
 			</div>
 			<div class="row mt-55 sm-mt-15">
 				<div class="col-lg-3 col-md-6 col-sm-12">
+
 					<div class="single-team">
 						<div class="team-thumb img-100p">
-							<img src="assets/images/team/1.jpg" alt="" />
-							<a href="javascript:void(0);"><i class="ti-plus"></i></a>
+							<img src="assets/images/team/1.jpg" alt="Jeet Shah" />
+							<a href="javascript:void(0);"><i class="ti-plus">Follow</i></a>
 						</div>
 						<div class="team-desc">
-							<h4>Jackson Nash</h4>
-							<small>Designer</small>
-						</div>
-						<div class="social-icons">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<a href="#"><i class="fa fa-youtube"></i></a>
+							<h4>Jeet Shah</h4>
+							<small>Cloud Engineer</small>
 						</div>
 					</div>
+					
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
 					<div class="single-team">
 						<div class="team-thumb img-100p">
-							<img src="assets/images/team/2.jpg" alt="" />
-							<a href="javascript:void(0);"><i class="ti-plus"></i></a>
+							<img src="assets/images/team/2 .jpg" alt="Krutika Chaurashiya" />
+							<a href="javascript:void(0);"><i class="ti-plus"></i>Follow</a>
 						</div>
 						<div class="team-desc">
-							<h4>Ollie Schneider</h4>
-							<small>Creative Director</small>
-						</div>
-						<div class="social-icons">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<a href="#"><i class="fa fa-youtube"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-team">
-						<div class="team-thumb img-100p">
-							<img src="assets/images/team/3.jpg" alt="" />
-							<a href="javascript:void(0);"><i class="ti-plus"></i></a>
-						</div>
-						<div class="team-desc">
-							<h4>Alex Manning</h4>
+							<h4>Krutika Chaurashiya</h4>
 							<small>Developer</small>
 						</div>
-						<div class="social-icons">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<a href="#"><i class="fa fa-youtube"></i></a>
-						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
 					<div class="single-team">
 						<div class="team-thumb img-100p">
-							<img src="assets/images/team/4.jpg" alt="" />
-							<a href="javascript:void(0);"><i class="ti-plus"></i></a>
+							<img src="assets/images/team/3 .jpg" alt="Yash Pendal" />
+							<a href="javascript:void(0);"><i class="ti-plus"></i>Follow</a>
 						</div>
 						<div class="team-desc">
-							<h4>Alex Manning</h4>
-							<small>Developer</small>
-						</div>
-						<div class="social-icons">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<a href="#"><i class="fa fa-youtube"></i></a>
+							<h4>Yash Pendal</h4>
+							<small>Cloud Engineer</small>
 						</div>
 					</div>
 				</div>
@@ -307,7 +302,7 @@
 			<div class="row">
 				<div class="col-sm-8 offset-sm-2">
 					<div class="section-title text-white text-center z-index">
-						<h2>What Client Say</h2>
+						<h2>What Clients Say...</h2>
 					</div>
 				</div>
 			</div>
@@ -315,27 +310,27 @@
 				<div class="col-sm-12">
 					<div class="testimonial-items style-2 carousel-two arrow-none z-index">
 						<div class="single-testimonial style-2 style-3">
-							<img src="assets/images/testimonial/2.jpg" alt="" />
-							<h4>Russell Stephens</h4>
-							<small>University in UK</small>
+							<img src="assets/images/testimonial/1.jpg" alt="" />
+							<h4>Jeet Shah</h4>
+							<small>Ganpat University</small>
 							<div class="testimonial-text">
 								<p>In today's world, its important to harness technology to help us advance and connect.</p>
 							</div>
 						</div>
 						<div class="single-testimonial style-2 style-3">
-							<img src="assets/images/testimonial/3.jpg" alt="" />
-							<h4>Kiwhi Leonard</h4>
-							<small>Open College</small>
+							<img src="assets/images/testimonial/1.jpg" alt="" />
+							<h4>Rahul Shrimali</h4>
+							<small>Faculty at Ganpat University</small>
 							<div class="testimonial-text">
 								<p>Together as teachers, students and universities we can help make this education available for everyone.</p>
 							</div>
 						</div>
 						<div class="single-testimonial style-2 style-3">
 							<img src="assets/images/testimonial/1.jpg" alt="" />
-							<h4>Nancy Franklin</h4>
-							<small>Creative Director</small>
+							<h4>Yash Pendal</h4>
+							<small>Student at Ganpat University</small>
 							<div class="testimonial-text">
-								<p>Together as teachers, students and universities we can help make this education available for everyone.</p>
+								<p>It's like a dream come true tow ork on this project and help people benefit from the solution.</p>
 							</div>
 						</div>
 					</div>
@@ -345,66 +340,36 @@
 	</div>
 	<!--testimonial-area end-->
 	
-	<!--brands-area start-->
-	<div class="brand-area bg-white">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="brand-items">
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/1.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/1-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/2.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/2-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/3.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/3-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/4.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/4-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/5.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/5-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/6.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/6-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/7.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/7-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/8.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/8-hover.png" alt="" />
-							</a>
+		<!--brands-area start-->
+		<div class="brand-area mt-110">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="brand-items">
+							<div class="brand-item">
+									<img class="brand-static" src="assets/images/brands/1.jpg" alt="" />
+							</div>
+							<div class="brand-item">
+									<img class="brand-static" src="assets/images/brands/2.png" alt="" />
+							</div>
+							<div class="brand-item">
+									<img class="brand-static" src="assets/images/brands/3.png" alt="" />
+							</div>
+							<div class="brand-item">
+									<img class="brand-static" src="assets/images/brands/4.jpg" alt="" />
+							</div>
+							<div class="brand-item">
+									<img class="brand-static" src="assets/images/brands/5.png" alt="" />
+							</div>
+							<div class="brand-item">
+									<img class="brand-static" src="assets/images/brands/6.png" alt="" />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!--brands-area end-->
+		<!--brands-area end-->
 	
 	<!--subscribe-area start-->
 	<div class="subscribe-area">
@@ -412,8 +377,9 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="subscribe-form">
-						<h3>Subscribe To Our Newletter</h3>
-						<p>We will send you the monthly Newsletter</p>
+						<h3>Stay Updated</h3>
+						<p>We'll send the latest updates from our Blogs to weather forecast right 
+							to your mail.</p>
 						<input type="email" placeholder="Your Email" />
 						<button class="btn-common">Subscribe</button>
 					</div>
@@ -423,87 +389,82 @@
 	</div>
 	<!--subscribe-area end-->
 	
-	<!--footer-area start-->
-	<footer class="footer-area">
-		<!--footer-top-->
-		<div class="footer-widgets">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>About Company</h4>
-							<div class="about-widget">
-								<p>It is a long established fact that a reader will be distracted by readable content of a page when looking at layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+		<!--footer-area start-->
+		<footer class="footer-area">
+			<!--footer-top-->
+			<div class="footer-widgets">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>GrowMore</h4>
+								<div class="about-widget">
+									<p>It is a portal for farmers where they can take informed decisions on which crop 
+										to cultivate depending on parameters and have awareness about various schemes of
+										 government and in general improves their cultivation methods.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Twitter Feed</h4>
-							<div class="twitter-feed">
-								<ul class="list-none">
-									<li>
-										<ul class="list-none inline-list">
-											<li><a href="#"><i class="social_twitter"></i>Thegarden</a> <span>|</span></li>
-											<li>8 months ago</li>
-										</ul>   
-										<p>It's an exclusive offer. Varmo Magento Multipurpose Responsive Theme</p>
-									</li>
-									<li>
-										<ul class="list-none inline-list">
-											<li><a href="#"><i class="social_twitter"></i>Thegarden</a> <span>|</span></li>
-											<li>8 months ago</li>
-										</ul>   
-										<p>It's an exclusive offer. Varmo Magento Multipurpose Responsive Theme</p>
-									</li>
-								</ul>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>Contact Info</h4>
+								<div class="contact-info style-3">
+									<ul>
+										<li><i class="fa fa-home"></i>303 Ganesh Meridian,A'BAD, India</li>
+										<li><i class="fa fa-phone"></i>(+91) 980 765 4321</li>
+										<li><i class="fa fa-envelope"></i>growmoree101@gmail.com</li>
+										<li><i class="fa fa-clock-o"></i>24X7X365</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Instagram</h4>
-							<div class="instagram-imgages">
-								<a href="#"><img src="assets/images/instagram/1.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/2.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/3.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/4.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/5.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/6.jpg" alt="instagram" /></a>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>Navigation</h4>
+								<div class="fooer-menu">
+									<ul class="mr-40"><b>
+										<li><a href="crop-rec.html">Crop Recommendation</a></li>
+										<li><a href="coming-soon.html">Insights>Coming Soon</a></li>
+										<li><a href="blog.html">Blogs</a></li>
+										<li><a href="faq.html">FAQs</a></li>
+										<li><a href="plants.html">Plants</a></li></b>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Working Hours</h4>
-							<div class="work-hours">
-								<ul class="list-none">
-									<li>Monday <span>07:00-17:00</span></li>
-									<li>Tuesday <span>07:00-17:00</span></li>
-									<li>Wednesday <span>07:00-17:00</span></li>
-									<li>Thursday <span>07:00-17:00</span></li>
-									<li>Friday <span>07:00-17:00</span></li>
-									<li>Saturday <span>07:00-17:00</span></li>
-									<li>Sunday <span>CLOSE</span></li>
-								</ul>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>Stay Updated</h4>
+								<p>We'll directly send Blogs to your mail.</p>
+								<div class="subscribe-form style-3 fix">
+									<input type="email" placeholder="Your Email" />
+									<button><i class="fa fa-envelope"></i></button>
+								</div>
+								<div class="social-icons style-3 mt-35">
+									<p>Follow us on</p>
+									<a href="https://www.facebook.com/growmoree101"><i class="fa fa-facebook"></i></a>
+									<a href="https://app.slack.com/client/T02VBAH9UQ7/D0305AECSES"><i class="fa fa-slack"></i></a>
+									<a href="https://www.instagram.com/growmoree101/"><i class="fa fa-instagram"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--footer copyright-->
-		<div class="footer-copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<p><a href="templatespint.net">Templates Point</a></p>
+			<!--footer copyright-->
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<p><a href="https://github.com/Jeetshah18/GrowMore">
+								<em><b> &copy;</b> All copyrights reserved by G29-GrowMore team</em></a></p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!--footer-area end-->
+		</footer>
+		<!--footer-area end-->
   
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>

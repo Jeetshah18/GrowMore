@@ -38,6 +38,29 @@
 	<link rel="stylesheet" href="style.css">
 	<!-- responsive css -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<script>
+		window.watsonAssistantChatOptions = {
+			integrationID: "7cee22ef-ef06-4aab-9ca6-6202f2ab1d62", // The ID of this integration.
+			region: "eu-gb", // The region your integration is hosted in.
+			serviceInstanceID: "a872e461-2820-42ca-9ae9-904e227f7a30", // The ID of your service instance.
+			onLoad: function(instance) { 
+				instance.updateCSSVariables({
+        		'BASE-font-family': '"Roboto Slab", cursive,"Bellota", serif',
+       			'$active-primary': '#795548',
+        		'$focus': '#00FF99',
+        		'$hover-primary': '#795548',
+        		'$interactive-01': '#8bc052'
+      			});
+				instance.render(); }
+		  };
+		setTimeout(function(){
+		  const t=document.createElement('script');
+		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+		  document.head.appendChild(t);
+		});
+	  </script>
+	  
 </head>
 
 <body>
@@ -58,9 +81,9 @@
 	  				</div>
 	  				<div class="col-sm-3">
 						<div class="social-icons pull-right">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.facebook.com/growmoree101"><i class="fa fa-facebook"></i></a>
+							<a href="https://app.slack.com/client/T02VBAH9UQ7/D0305AECSES"><i class="fa fa-slack"></i></a>
+							<a href="https://www.instagram.com/growmoree101/"><i class="fa fa-instagram"></i></a>
 						</div>
 					</div>
 	  			</div>
@@ -80,6 +103,7 @@
 							<nav>
 								<ul>
 									<li><a href="index.html">Home</a></li>
+									<li><a href="crop-rec.html">Crop REC</a></li>
 									<li><a href="#">Insights</a>
 										<ul class="submenu">
 											<li><a href="about.html">About Us</a></li>
@@ -109,10 +133,9 @@
 				<div class="col-lg-12">
 					<div class="page-banner-text text-center text-white pt-95">
 						<h2>Frequently Asked Questions</h2>
-						<!-- <ul class="site-breadcrumb">
-							<li><a href="#">Home</a> <span>></span></li>
-							<li>Services</li>
-						</ul> -->
+						<ul class="site-breadcrumb">
+							<li><a href="#">Home > FAQs</a></li>
+						</ul> 
 					</div>
 				</div>
 			</div>
@@ -120,96 +143,6 @@
 	</div>
 	<!--page-banner-area end-->
 	
-	<!--service-details start-->
-<!-- 	<div class="service-details-area mt-100 sm-mt-80">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-12">
-					<div class="sidebar sm-mt-0">
-						<div class="single-sidebar sidebar-menu">
-							<ul class="list-none">
-								<li>
-									<a href="#">
-										<img class="icon-first" src="assets/images/icons/5.png" alt="" />
-										<img class="icon-second" src="assets/images/icons/5.1.png" alt="" />
-										Planting & Garden Care
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img class="icon-first" src="assets/images/icons/6.png" alt="" />
-										<img class="icon-second" src="assets/images/icons/6.1.png" alt="" />
-										Watering your Garden
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<img class="icon-first" src="assets/images/icons/7.png" alt="" />
-										<img class="icon-second" src="assets/images/icons/7.1.png" alt="" />
-										Design and Renovation
-									</a>
-								</li>
-							</ul>
-						</div> -->
-						<!-- <div class="single-sidebar document-download pd-30">
-							<h4 class="sidebar-title"><i class="fa fa-clipboard"></i>Download Documents</h4>
-							<ul class="list-none">
-								<li><a href="#">Tree Planting. pdf <i class="fa fa-download" aria-hidden="true"></i></a></li>
-								<li><a href="#">How to watering. doc <i class="fa fa-download" aria-hidden="true"></i></a></li>
-								<li><a href="#">Our Services. ppt <i class="fa fa-download" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-						<div class="single-sidebar pd-30">
-							<div class="contact-form style-3 style-4">
-								<div class="row">
-									<div class="col-sm-12">
-										<input type="text" placeholder="Name" />
-									</div>
-									<div class="col-sm-12">
-										<input type="text" placeholder="Email" />
-									</div>
-									<div class="col-sm-12">
-										<input type="text" placeholder="Phone" />
-									</div>
-									<div class="col-sm-12">
-										<textarea placeholder="Message"></textarea>
-									</div>
-									<div class="col-sm-12">
-										<button class="btn-common">Send message</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
-				<!-- <div class="col-lg-8 col-md-8 col-sm-12">
-					<img src="assets/images/services/6.jpg" alt="service" />
-					<div class="service-text-block fix">
-						<h3>Watering Your Garden</h3>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-					</div>
-					<div class="row mt-40">
-						<div class="col-lg-6 img-100p">
-							<img src="assets/images/services/7.jpg" alt="service" />
-							<div class="service-text-block fix">
-								<h4>Our Working Process</h4>
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-							</div>
-						</div>
-						<div class="col-lg-6 sm-mt-30 img-100p">
-							<img src="assets/images/services/8.jpg" alt="service" />
-							<div class="service-text-block fix">
-								<h4>What’s included</h4>
-								<ul class="list-tick">
-									<li>Soil Preparation</li>
-									<li>The Planting Hole</li>
-									<li>Transplanting</li>
-									<li>Root Pruning</li>
-									<li>Transplanting</li>
-								</ul>
-							</div>
-						</div>
-					</div> -->
 					<div class="row mt-40">
 						<div class="col-sm-12">
 							<div id="accordion" class="faq-section">
@@ -273,58 +206,28 @@
 	<!--service-details end-->
 	
 	<!--brands-area start-->
-	<div class="brand-area mt-80">
+	<div class="brand-area mt-110">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="brand-items">
 						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/1.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/1-hover.png" alt="" />
-							</a>
+								<img class="brand-static" src="assets/images/brands/1.jpg" alt="" />
 						</div>
 						<div class="brand-item">
-							<a href="#">
 								<img class="brand-static" src="assets/images/brands/2.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/2-hover.png" alt="" />
-							</a>
 						</div>
 						<div class="brand-item">
-							<a href="#">
 								<img class="brand-static" src="assets/images/brands/3.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/3-hover.png" alt="" />
-							</a>
 						</div>
 						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/4.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/4-hover.png" alt="" />
-							</a>
+								<img class="brand-static" src="assets/images/brands/4.jpg" alt="" />
 						</div>
 						<div class="brand-item">
-							<a href="#">
 								<img class="brand-static" src="assets/images/brands/5.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/5-hover.png" alt="" />
-							</a>
 						</div>
 						<div class="brand-item">
-							<a href="#">
 								<img class="brand-static" src="assets/images/brands/6.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/6-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/7.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/7-hover.png" alt="" />
-							</a>
-						</div>
-						<div class="brand-item">
-							<a href="#">
-								<img class="brand-static" src="assets/images/brands/8.png" alt="" />
-								<img class="brand-dynamic" src="assets/images/brands/8-hover.png" alt="" />
-							</a>
 						</div>
 					</div>
 				</div>
@@ -333,87 +236,82 @@
 	</div>
 	<!--brands-area end-->
 	
-	<!--footer-area start-->
-	<footer class="footer-area">
-		<!--footer-top-->
-		<div class="footer-widgets">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>About Company</h4>
-							<div class="about-widget">
-								<p>It is a long established fact that a reader will be distracted by readable content of a page when looking at layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+		<!--footer-area start-->
+		<footer class="footer-area">
+			<!--footer-top-->
+			<div class="footer-widgets">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>GrowMore</h4>
+								<div class="about-widget">
+									<p>It is a portal for farmers where they can take informed decisions on which crop 
+										to cultivate depending on parameters and have awareness about various schemes of
+										 government and in general improves their cultivation methods.
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Twitter Feed</h4>
-							<div class="twitter-feed">
-								<ul class="list-none">
-									<li>
-										<ul class="list-none inline-list">
-											<li><a href="#"><i class="social_twitter"></i>Thegarden</a> <span>|</span></li>
-											<li>8 months ago</li>
-										</ul>   
-										<p>It's an exclusive offer. Varmo Magento Multipurpose Responsive Theme</p>
-									</li>
-									<li>
-										<ul class="list-none inline-list">
-											<li><a href="#"><i class="social_twitter"></i>Thegarden</a> <span>|</span></li>
-											<li>8 months ago</li>
-										</ul>   
-										<p>It's an exclusive offer. Varmo Magento Multipurpose Responsive Theme</p>
-									</li>
-								</ul>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>Contact Info</h4>
+								<div class="contact-info style-3">
+									<ul>
+										<li><i class="fa fa-home"></i>303 Ganesh Meridian,A'BAD, India</li>
+										<li><i class="fa fa-phone"></i>(+91) 980 765 4321</li>
+										<li><i class="fa fa-envelope"></i>growmoree101@gmail.com</li>
+										<li><i class="fa fa-clock-o"></i>24X7X365</li>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Instagram</h4>
-							<div class="instagram-imgages">
-								<a href="#"><img src="assets/images/instagram/1.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/2.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/3.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/4.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/5.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/6.jpg" alt="instagram" /></a>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>Navigation</h4>
+								<div class="fooer-menu">
+									<ul class="mr-40"><b>
+										<li><a href="crop-rec.html">Crop Recommendation</a></li>
+										<li><a href="coming-soon.html">Insights>Coming Soon</a></li>
+										<li><a href="blog.html">Blogs</a></li>
+										<li><a href="faq.html">FAQs</a></li>
+										<li><a href="plants.html">Plants</a></li></b>
+									</ul>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Working Hours</h4>
-							<div class="work-hours">
-								<ul class="list-none">
-									<li>Monday <span>07:00-17:00</span></li>
-									<li>Tuesday <span>07:00-17:00</span></li>
-									<li>Wednesday <span>07:00-17:00</span></li>
-									<li>Thursday <span>07:00-17:00</span></li>
-									<li>Friday <span>07:00-17:00</span></li>
-									<li>Saturday <span>07:00-17:00</span></li>
-									<li>Sunday <span>CLOSE</span></li>
-								</ul>
+						<div class="col-lg-3 col-sm-6">
+							<div class="footer-widget style-2">
+								<h4>Stay Updated</h4>
+								<p>We'll directly send Blogs to your mail.</p>
+								<div class="subscribe-form style-3 fix">
+									<input type="email" placeholder="Your Email" />
+									<button><i class="fa fa-envelope"></i></button>
+								</div>
+								<div class="social-icons style-3 mt-35">
+									<p>Follow us on</p>
+									<a href="https://www.facebook.com/growmoree101"><i class="fa fa-facebook"></i></a>
+									<a href="https://app.slack.com/client/T02VBAH9UQ7/D0305AECSES"><i class="fa fa-slack"></i></a>
+									<a href="https://www.instagram.com/growmoree101/"><i class="fa fa-instagram"></i></a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!--footer copyright-->
-		<div class="footer-copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<p><a href="templatespint.net">Templates Point</a></p>
+			<!--footer copyright-->
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<p><a href="https://github.com/Jeetshah18/GrowMore">
+								<em><b> &copy;</b> All copyrights reserved by G29-GrowMore team</em></a></p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<!--footer-area end-->
+		</footer>
+		<!--footer-area end-->
   
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>

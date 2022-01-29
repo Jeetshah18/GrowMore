@@ -38,6 +38,29 @@
 	<link rel="stylesheet" href="style.css">
 	<!-- responsive css -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<script>
+		window.watsonAssistantChatOptions = {
+			integrationID: "7cee22ef-ef06-4aab-9ca6-6202f2ab1d62", // The ID of this integration.
+			region: "eu-gb", // The region your integration is hosted in.
+			serviceInstanceID: "a872e461-2820-42ca-9ae9-904e227f7a30", // The ID of your service instance.
+			onLoad: function(instance) { 
+				instance.updateCSSVariables({
+        		'BASE-font-family': '"Roboto Slab", cursive,"Bellota", serif',
+       			'$active-primary': '#795548',
+        		'$focus': '#00FF99',
+        		'$hover-primary': '#795548',
+        		'$interactive-01': '#8bc052'
+      			});
+				instance.render(); }
+		  };
+		setTimeout(function(){
+		  const t=document.createElement('script');
+		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+		  document.head.appendChild(t);
+		});
+	  </script>
+	  
 </head>
 
 <body>
@@ -80,6 +103,7 @@
 							<nav>
 								<ul>
 									<li><a href="index.html">Home</a></li>
+									<li><a href="crop-rec.html">Crop REC</a></li>
 									<li><a href="#">Insights</a>
 										<ul class="submenu">
 											<li><a href="about.html">About Us</a></li>
@@ -293,8 +317,9 @@
 			<div class="row">
 				<div class="col-lg-6 offset-lg-3">
 					<div class="subscribe-form">
-						<h3>Subscribe To Our Newletter</h3>
-						<p>We will send you the monthly Newsletter</p>
+						<h3>Stay updated</h3>
+						<p>We'll send the latest updates from our Blogs to weather forecast right 
+							to your mail.</p>
 						<input type="email" placeholder="Your Email" />
 						<button class="btn-common">Subscribe</button>
 					</div>
@@ -311,62 +336,56 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>About Company</h4>
+						<div class="footer-widget style-2">
+							<h4>GrowMore</h4>
 							<div class="about-widget">
-								<p>It is a long established fact that a reader will be distracted by readable content of a page when looking at layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+								<p>It is a portal for farmers where they can take informed decisions on which crop 
+									to cultivate depending on parameters and have awareness about various schemes of
+									 government and in general improves their cultivation methods.
+								</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Twitter Feed</h4>
-							<div class="twitter-feed">
-								<ul class="list-none">
-									<li>
-										<ul class="list-none inline-list">
-											<li><a href="#"><i class="social_twitter"></i>Thegarden</a> <span>|</span></li>
-											<li>8 months ago</li>
-										</ul>   
-										<p>It's an exclusive offer. Varmo Magento Multipurpose Responsive Theme</p>
-									</li>
-									<li>
-										<ul class="list-none inline-list">
-											<li><a href="#"><i class="social_twitter"></i>Thegarden</a> <span>|</span></li>
-											<li>8 months ago</li>
-										</ul>   
-										<p>It's an exclusive offer. Varmo Magento Multipurpose Responsive Theme</p>
-									</li>
+						<div class="footer-widget style-2">
+							<h4>Contact Info</h4>
+							<div class="contact-info style-3">
+								<ul>
+									<li><i class="fa fa-home"></i>303 Ganesh Meridian,A'BAD, India</li>
+									<li><i class="fa fa-phone"></i>(+91) 980 765 4321</li>
+									<li><i class="fa fa-envelope"></i>growmoree101@gmail.com</li>
+									<li><i class="fa fa-clock-o"></i>24X7X365</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Instagram</h4>
-							<div class="instagram-imgages">
-								<a href="#"><img src="assets/images/instagram/1.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/2.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/3.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/4.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/5.jpg" alt="instagram" /></a>
-								<a href="#"><img src="assets/images/instagram/6.jpg" alt="instagram" /></a>
+						<div class="footer-widget style-2">
+							<h4>Navigation</h4>
+							<div class="fooer-menu">
+								<ul class="mr-40"><b>
+									<li><a href="crop-rec.html">Crop Recommendation</a></li>
+									<li><a href="coming-soon.html">Insights > Coming Soon</a></li>
+									<li><a href="blog.html">Blogs</a></li>
+									<li><a href="faq.html">FAQs</a></li>
+									<li><a href="plants.html">Plants</a></li></b>
+								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<div class="footer-widget">
-							<h4>Working Hours</h4>
-							<div class="work-hours">
-								<ul class="list-none">
-									<li>Monday <span>07:00-17:00</span></li>
-									<li>Tuesday <span>07:00-17:00</span></li>
-									<li>Wednesday <span>07:00-17:00</span></li>
-									<li>Thursday <span>07:00-17:00</span></li>
-									<li>Friday <span>07:00-17:00</span></li>
-									<li>Saturday <span>07:00-17:00</span></li>
-									<li>Sunday <span>CLOSE</span></li>
-								</ul>
+						<div class="footer-widget style-2">
+							<h4>Stay Updated</h4>
+							<p>We'll directly send Blogs to your mail.</p>
+							<div class="subscribe-form style-3 fix">
+								<input type="email" placeholder="Your Email" />
+								<button><i class="fa fa-envelope"></i></button>
+							</div>
+							<div class="social-icons style-3 mt-35">
+								<p>Follow us on</p>
+								<a href="https://www.facebook.com/growmoree101"><i class="fa fa-facebook"></i></a>
+								<a href="https://app.slack.com/client/T02VBAH9UQ7/D0305AECSES"><i class="fa fa-slack"></i></a>
+								<a href="https://www.instagram.com/growmoree101/"><i class="fa fa-instagram"></i></a>
 							</div>
 						</div>
 					</div>
@@ -378,7 +397,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<p><a href="templatespint.net">Templates Point</a></p>
+						<p><a href="https://github.com/Jeetshah18/GrowMore">
+							<em><b> &copy;</b> All copyrights reserved by G29-GrowMore team</em></a></p>
 					</div>
 				</div>
 			</div>
