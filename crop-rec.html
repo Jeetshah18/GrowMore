@@ -1,0 +1,465 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>GrowMore - Recommend </title>
+	<meta name="description" content="An Agricultural portal">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="manifest" href="site.html">
+	<link rel="apple-touch-icon" href="icon.html">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- bootstrap v4.0.0 -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- fontawesome-icons css -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- themify-icons css -->
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<!-- elegant css -->
+	<link rel="stylesheet" href="assets/css/elegant.css">
+	<!-- meanmenu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- venobox css -->
+	<link rel="stylesheet" href="assets/css/venobox.css">
+	<!-- jquery-ui.min css -->
+	<link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+	<!-- slick css -->
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<!-- slick-theme css -->
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	<!-- helper css -->
+	<link rel="stylesheet" href="assets/css/helper.css">
+	<!-- style css -->
+	<link rel="stylesheet" href="style.css">
+	<!-- responsive css -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--form-area style start-->
+    <style>
+        .form-control {
+            height: 40px;
+            box-shadow: none;
+            color: #ff8080;
+        }
+        .form-control:focus {
+            border-color: #f5c136;
+        }
+        .form-control, .btn {        
+            border-radius: 5px;
+        }
+
+        .btn{
+            background-color:#8bc052;
+        }
+
+        .signup-form {
+            width: 450px;
+            margin: 0 auto;
+            padding: 30px 0;
+              font-size: 18px;
+        }
+        .signup-form h2 {
+            color: #8bc052;
+            margin: 0 0 15px;
+            position: relative;
+            text-align: center;
+        }
+        .signup-form h2:before, .signup-form h2:after {
+            content: "";
+            height: 5px;
+            width: 15%;
+            background: #f5c136;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            border-radius: 5px;
+        }	
+        .signup-form h2:before {
+            left: 0;
+        }
+        .signup-form h2:after {
+            right: 0;
+        }
+        .signup-form .hint-text {
+            color: #f5c136;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .signup-form form {
+            color: #000000;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            background: #e5e5e5;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+        .signup-form input[type="checkbox"] {
+            margin-top: 3px;
+        }
+        .signup-form .btn {        
+            font-size: 18px;
+            font-weight: bold;		
+            min-width: 140px;
+            outline: none !important;
+        }
+        .signup-form .row div:first-child {
+            padding-right: 10px;
+        }
+        .signup-form .row div:last-child {
+            padding-left: 10px;
+        }    	
+        .signup-form a {
+            color: #f5c136;
+            text-decoration: none;
+        }
+        .signup-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!--form-area style end-->
+
+	<script>
+		window.watsonAssistantChatOptions = {
+			integrationID: "7cee22ef-ef06-4aab-9ca6-6202f2ab1d62", // The ID of this integration.
+			region: "eu-gb", // The region your integration is hosted in.
+			serviceInstanceID: "a872e461-2820-42ca-9ae9-904e227f7a30", // The ID of your service instance.
+			onLoad: function(instance) { 
+				instance.updateCSSVariables({
+        		'BASE-font-family': '"Roboto Slab", cursive,"Bellota", serif',
+       			'$active-primary': '#795548',
+        		'$focus': '#00FF99',
+        		'$hover-primary': '#795548',
+        		'$interactive-01': '#8bc052'
+      			});
+				instance.render(); }
+		  };
+		setTimeout(function(){
+		  const t=document.createElement('script');
+		  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+		  document.head.appendChild(t);
+		});
+	  </script>
+
+</head>
+
+<body>
+
+  	<!--header-area start-->
+  	<header class="header-area">
+		<!--header-top-->
+	  	<div class="header-top d-none d-sm-block">
+	  		<div class="container">
+	  			<div class="row align-items-center">
+	  				<div class="col-sm-9">
+	  					<div class="contact-info">
+	  						<ul>
+	  							<li><i class="fa fa-phone"></i>(+91) 9261 435 768 <span>|</span></li>
+	  							<li><i class="fa fa-home"></i>303 Ganesh Meridian,A'BAD  <span>|</span></li>
+	  							<li><i class="fa fa-time"></i>Monday - Saturday: 7.AM - 5.PM</li>
+	  						</ul>
+	  					</div>
+	  				</div>
+	  				<div class="col-sm-3">
+						<div class="social-icons pull-right">
+							<a href="https://www.facebook.com/growmoree101"><i class="fa fa-facebook"></i></a>
+							<a href="https://app.slack.com/client/T02VBAH9UQ7/D0305AECSES"><i class="fa fa-slack"></i></a>
+							<a href="https://www.instagram.com/growmoree101/"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+					</div>
+	  			</div>
+	  		</div>
+	  	</div>
+		<!--header-bottom-->
+		<div id="sticker" class="header-bottom">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-sm-2">
+						<div class="logo">
+							<a href="index.html"><img src="assets/images/logowbg.png" alt="logo"></a>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="mainmenu text-center">
+							<nav>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="crop-rec.html">RECOMMEND</a></li>
+									<li><a href="#">Insights</a>
+										<ul class="submenu">
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="coming-soon.html">Coming Soon</a></li> 
+										</ul>
+									</li>
+									<li><a href="faq.html">FAQs</a></li>
+									<li><a href="blog.html">Blog</a>
+									</li>
+									<li><a href="plants.html">Plants</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+									<li><a href="login.html">SIGNIN/SIGNUP</a></li>									
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  	</header>
+  	<!--header-area end-->
+	
+	<!--page-banner-area start-->
+	<div class="page-banner-area bg-4" style="background-image:  url(assets/images/banners/page-banner-1.jpg);">
+		<div class="container">
+			<div class="row align-items-center height-400">
+				<div class="col-lg-12">
+					<div class="page-banner-text text-center text-white">
+						<h2>Recommend</h2>
+						<ul class="site-breadcrumb">
+							<li><a href="index.html">Home</a> <span>></span></li>
+							<li>Recommend</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--banner-area end-->
+	
+	<!--title-area start-->
+	<div class="blog-area mt-62 sm-mt-58">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-8 offset-sm-2">
+					<div class="section-title style-2">
+						<h2>&#9813; <b> Crop Recommendation </b> &#9813;</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--title-area end-->
+	
+    <!--form-area start-->
+    <div class="signup-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2>Recommend</h2>
+            <p class="hint-text">Enter your values in the textbox given below</p>
+            <div class="form-group">
+                <div class="row">
+                    <label for="nitrogen">Nitrogen (N)</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="nitrogen" placeholder="Enter Nirogen value Ex:50" required="required">
+                    </div>                
+                </div>        	
+            </div>
+            
+            <div class="form-group">
+                <div class="row">
+                    <label for="phosphorus">Phosphorus (P)</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="phosphorus" placeholder="Enter Phosphorus value Ex:50" required="required">
+                    </div>                
+                </div>        	
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <label for="potassium">Potassium (K)</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="potassium" placeholder="Enter Potassium value Ex:50" required="required">
+                    </div>                
+                </div>        	
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <label for="temperature">Temperature (&#8451;)</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="temperature" placeholder="Enter Temperature in celcius Ex:25" required="required">
+                    </div>                
+                </div>        	
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <label for="humidity">Humidity (%)</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="humidity" placeholder="Enter Humidity in percentage Ex:5%" required="required">
+                    </div>                
+                </div>        	
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <label for="rainfall">Rainfall (&#127783;)</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="rainfall" placeholder="Enter Rainfall in mm Ex: 150" required="required">
+                    </div>                
+                </div>        	
+            </div>
+            
+            <div class="form-group">
+                <div class="row">
+                    <label for="ph">PH (&#13271)</label>
+                    <div class="col">
+                        <input type="text" class="form-control" id="ph" placeholder="Enter ph value between 0 10 14" required="required">
+                    </div>                
+                </div>        	
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+            </div>
+        </form>
+        <div class="text-center">Want to know about weather? <a href="coming-soon.html">Click here</a></div>
+    </div>
+    <!--form-area end-->
+
+	<!--brands-area start-->
+	<div class="brand-area mt-110">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="brand-items">
+						<div class="brand-item">
+								<img class="brand-static" src="assets/images/brands/1.jpg" alt="" />
+						</div>
+						<div class="brand-item">
+								<img class="brand-static" src="assets/images/brands/2.png" alt="" />
+						</div>
+						<div class="brand-item">
+								<img class="brand-static" src="assets/images/brands/3.png" alt="" />
+						</div>
+						<div class="brand-item">
+								<img class="brand-static" src="assets/images/brands/4.jpg" alt="" />
+						</div>
+						<div class="brand-item">
+								<img class="brand-static" src="assets/images/brands/5.png" alt="" />
+						</div>
+						<div class="brand-item">
+								<img class="brand-static" src="assets/images/brands/6.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--brands-area end-->
+
+	<!--footer-area start-->
+	<footer class="footer-area">
+		<!--footer-top-->
+		<div class="footer-widgets">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget style-2">
+							<h4>GrowMore</h4>
+							<div class="about-widget">
+								<p>It is a portal for farmers where they can take informed decisions on which crop 
+									to cultivate depending on parameters and have awareness about various schemes of
+									 government and in general improves their cultivation methods.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget style-2">
+							<h4>Contact Info</h4>
+							<div class="contact-info style-3">
+								<ul>
+									<li><i class="fa fa-home"></i>303 Ganesh Meridian,A'BAD, India</li>
+									<li><i class="fa fa-phone"></i>(+91) 980 765 4321</li>
+									<li><i class="fa fa-envelope"></i>growmoree101@gmail.com</li>
+									<li><i class="fa fa-clock-o"></i>24X7X365</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget style-2">
+							<h4>Navigation</h4>
+							<div class="fooer-menu">
+								<ul class="mr-40"><b>
+									<li><a href="crop-rec.html">Crop Recommendation</a></li>
+									<li><a href="coming-soon.html">Insights > Coming Soon</a></li>
+									<li><a href="blog.html">Blogs</a></li>
+									<li><a href="faq.html">FAQs</a></li>
+									<li><a href="plants.html">Plants</a></li></b>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="footer-widget style-2">
+							<h4>Stay Updated</h4>
+							<p>We'll directly send Blogs to your mail.</p>
+							<div class="subscribe-form style-3 fix">
+								<input type="email" placeholder="Your Email" />
+								<button><i class="fa fa-envelope"></i></button>
+							</div>
+							<div class="social-icons style-3 mt-35">
+								<p>Follow us on</p>
+								<a href="https://www.facebook.com/growmoree101"><i class="fa fa-facebook"></i></a>
+								<a href="https://app.slack.com/client/T02VBAH9UQ7/D0305AECSES"><i class="fa fa-slack"></i></a>
+								<a href="https://www.instagram.com/growmoree101/"><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer copyright-->
+		<div class="footer-copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<p><a href="https://github.com/Jeetshah18/GrowMore">
+							<em><b> &copy;</b> All copyrights reserved by G29-GrowMore team</em></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--footer-area end-->
+  
+	<!-- modernizr js -->
+	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<!-- jquery-1.12.0 version -->
+	<script src="assets/js/vendor/jquery-1.12.0.min.js"></script>
+	<!-- bootstra.min js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- meanmenu js -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- easing js -->
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<!---venobox-js-->
+	<script src="assets/js/venobox.min.js"></script>
+	<!---slick-js-->
+	<script src="assets/js/slick.min.js"></script>
+	<!---waypoints-js-->
+	<script src="assets/js/waypoints.js"></script>
+	<!---counterup-js-->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!---isotop-js-->
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<!-- jquery-ui js -->
+	<script src="assets/js/jquery-ui.min.js"></script>
+	<!-- jquery.countdown js -->
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<!-- plugins js -->
+	<script src="assets/js/plugins.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+  
+</body>
+
+</html>
